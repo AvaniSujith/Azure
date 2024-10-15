@@ -1,0 +1,1386 @@
+/* .side-btn img{
+  width: 20px;
+  height: 20px;
+}
+.microsoft img{
+    width: 108px;
+    margin-top: -3px;
+}
+a{
+    text-decoration: none;
+    border: none;
+}
+button{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+} */
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    margin: 0;
+ }
+@font-face {
+    font-family: "MWF MDL2 Assets";
+    src: url("https://db.onlinewebfonts.com/t/ba047a29b78bffd9a985b2e86b289fe8.eot");
+    src: url("https://db.onlinewebfonts.com/t/ba047a29b78bffd9a985b2e86b289fe8.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/ba047a29b78bffd9a985b2e86b289fe8.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/ba047a29b78bffd9a985b2e86b289fe8.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/ba047a29b78bffd9a985b2e86b289fe8.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/ba047a29b78bffd9a985b2e86b289fe8.svg#MWF MDL2 Assets") format("svg");
+}
+.nav-button-side{
+    width:48px;
+    height: 48px;
+    padding: 6px 0;
+    margin: 1px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'MWF MDL2 Assets';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    /* overflow: hidden; */
+}
+.nav-button-search{
+    width: 34px;
+    height: 32px;
+    margin: 2px 6px 1px 2px;
+    padding: 8px 8px 8px 0px;
+    font-family: 'MWF MDL2 Assets';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+}
+.side-btn{
+    overflow: hidden;
+}
+.top{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    height: 54px;
+    width: 100%;
+    background: #fff;
+}
+.rest-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.microsoft img{
+    width: 108px;
+    margin-top:-3px;
+}
+.microsoft a{
+    text-decoration: none;
+    border: none;
+}
+.logo-button{
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    align-items: center;
+    /* padding: 0px 15px 0px 15px; */
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 600;
+    /* margin: 0px 1px 0px 1px; */
+    margin: 0 1px;
+}
+.dropdown-icon{
+    font-family: 'MWF MDL2 Assets';
+    font-size: 12px;
+    font-weight: 700;
+    top: 2px;
+    padding-left: 7px;
+}
+.navbar{
+    width: 100%;
+    height: 34px;
+    top: 54px;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.azure-img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* display: block; */
+}
+.azure-img img{
+    width: 100%;  
+    height: auto; 
+    object-fit: cover;  
+    display: block;  
+    /* vertical-align: middle; */
+}
+.azure-info{
+    background-color: rgb(0, 41, 72);
+    color: rgb(220, 238, 248);
+}
+.heading{
+    color: #b3daf0;
+    /* font-size: 12px; */
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 12px;
+}
+.main-heading h1{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: -1.6px;
+    text-align: left;
+    font-family:  "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(244, 250, 253);
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+/* .info-container{
+    background: linear-gradient(to
+} */
+ .heading-content{
+    display: block;
+    font-family:  "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    line-height: 28px;
+    text-align: left;
+    text-size-adjust: 100%;
+    padding-inline-end: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+ }
+ .info-container{
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+ }
+ /* .content{
+    display: contents;
+ } */
+/* Glyph icon styling using pseudo-element */
+/* .global-nav-button::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #0078d4 0px,
+        #0078d4 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    display: block;
+} */
+ /* .haeding-btn{
+    margin-top: 24px;
+ } */
+ .heading-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 24px;
+    padding-bottom: 96px;
+ }
+
+.btn-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.btn-text{
+    padding-bottom: 2px;
+    display: block;
+    text-align: center;
+    letter-spacing: -.3px;
+    line-height: 22px;
+   
+}
+a{
+    text-decoration: none;
+}
+.btn-contents a{
+    justify-content: center;
+    border:2px solid transparent;
+    padding: 0.75rem;
+    font-weight: 600;
+    text-size-adjust: 100%;
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -.02em;
+    color: #000;
+    background-color: #b3daf0;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family:  "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    display: inline-block;
+}
+.heading-btn .btn-contents:nth-child(2) a{
+    background-color: transparent;
+    border-color: #8dc8e8;
+    /* color: #f4fafd; */
+ 
+ }
+ .heading-btn .btn-contents:nth-child(2) a .btn-text{
+    color: #f4fafd;
+    /* border: 2px solid; */
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+ }
+ .heading-btn .btn-contents:nth-child(1) a .btn-text{
+    color: #0e1726;
+    /* border: 2px solid; */
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+ }
+.middle{
+    margin: 4px;
+}
+.cat-logo-button-cont {
+    margin-left: auto;
+    padding-left: 10px;
+}
+.partition{
+    /* display: flex; */
+    /* height: 60px; */
+    margin-top: 0;
+    background-color: #fefefe;
+    width: 320px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.nav-btn{
+    box-shadow: ;
+}
+.down{
+    display: flex;
+    /* padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px; */
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sticky-nav{
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.down-text{
+    /* color: #17253d; */
+    color: #004275;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.indicator{
+    width: 100%;
+    height: 0.25rem;
+    background-color: #004275;
+}
+.down-icon{
+    /* padding-right: 12px; */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'MWF MDL2 Assets';
+    font-size: 13px;
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    color: rgb(0, 120, 212);
+}
+.main-content{
+    background-image: url('assets/Image/361349-mobile-card-carousel-featured-news-bg-360x1321.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.card-title{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.cards-heading{
+    flex-direction: column;
+}
+.card-header{
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    /* padding-top: 56px; */
+    text-align: left;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(23, 37, 61);
+}
+.card-sub-header h2{
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+    /* font-size: 24px; */
+    line-height: 2rem;
+    letter-spacing: -.05em;
+    display: block;
+    text-align: left;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(14, 23, 38);
+    margin: 0;
+}
+.card-division{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.card-col{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    row-gap: 0.5rem;
+    column-gap: 0.75rem;
+}
+.avail-card{
+    flex: 0 0 100%;
+    /* padding-bottom: 8px; */
+    margin-bottom: 8px;
+}
+.card-component{
+    background-color: #fefefe;
+    flex: 1 1 auto;
+    position:relative ;
+    display: flex;
+    flex-direction: column;
+    min-width: 1px;
+    word-wrap: break-word;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.125rem var(--root-depth-color-1, rgba(0, 0, 0, 0.12)),0 0.125rem 0.25rem var(--root-depth-color-2, rgba(0, 0, 0, 0.14));
+}
+.card-media{
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* border-radius: 8px; */
+    border-radius: 0.5rem;
+    aspect-ratio: 2.33333;
+    /* width: 264px; */
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+.card-media img{
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+.card-content{
+    padding: 1rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 1px;
+    word-wrap: break-word;
+    background-clip: border-box;
+    height: 100%;
+    position: relative;
+}
+.card-content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    text-size-adjust: 100%;
+    overflow-wrap:break-word ;
+    text-align: left;
+}
+.card-content-head h3 span{
+    font-size: 1.125rem;
+    font-size: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+.card-content-head h3{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.card-info{
+    padding-inline-end: 0rem;
+    text-align: left;
+}
+.card-token-text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 0;
+    color: #17253d;
+    text-align: left;
+    text-align-last: start;
+}
+.card-btn{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    row-gap: normal;
+    word-wrap: break-word;
+}
+.card-btn a{
+    color: #004275;
+    display: inline-flex;
+    /* display: flex; */
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 0.5rem;
+    align-items: center;
+}
+.btn-icon{
+    font-family: "MWF MDL2 Assets";
+    background-color: #0078d4;
+    color: #fff;
+    /* padding: 5px; */
+    padding: 0.5rem;
+    height: 35px;
+    /* height: 100%; */
+    /* padding: 8px; */
+    border-radius: 0.5rem;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 0.25rem;
+    align-items: center;
+    text-decoration: none;
+    /* font-size: 0.9375rem; */
+    font-size: 12px;
+    /* margin-right: 10px; */
+    font-weight: 600;
+    line-height: 1.375rem;
+    justify-content: center;
+    border: 2px solid transparent;
+    text-size-adjust: 100%;
+    overflow-wrap:break-word ;
+    /* width: 100%; */
+}
+.btn-text{
+    padding-bottom:0.125rem ;
+    color: #004275;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    font-family:  "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+.solutions, .product{
+    background-color: rgb(244, 250, 253);
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.solution-content{
+    color: rgb(23, 37, 61);
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.25rem;
+    margin-left: -0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.soln-header-text{
+    margin: 0 0 0.75rem;
+    color: #17253d;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+.soln-sub-header{
+    color: #0e1726;
+    margin: 0;
+}
+.soln-sub-header h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    margin: 0;
+    font-family:  "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.soln-main, .product-content{
+    margin-top:1.5rem ;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.soln-scroll{
+    display: flex;
+    text-align: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.soln-main-content, .product-main-content{
+    background-position: 25%;
+    /* position: absolute; */
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f4fafd;
+    display: flex;
+    text-align: left;
+    width: 696px;
+}
+.product-main-content{
+    background-color: unset;
+}
+.scroll{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: start;
+}
+.soln-btn, .product-btn{
+    background-color: #005597;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    flex: 0 0 auto;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 12.5rem;
+    border: none;
+}
+.soln-btn span{
+    padding-bottom: 0.125rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.scroll-btn{
+    display: block;
+    right: -0.25rem;
+    /* background-image: linear-gradient(270deg, rgb(244, 250, 253) 25%, rgba(242, 242, 242, 0) 100%); */
+    background-color: transparent;
+    background-origin: padding-box;
+    align-items: flex-start;
+    appearance: button;
+    background-attachment:scroll ;
+    /* border-radius: 200px; */
+    display: block;
+}
+.scroll-btn button{
+    font-family: "MWF MDL2 Assets";
+    border-radius: 12.5rem;
+    /* padding: 5px; */
+    /* height: 100%; */
+    /* padding: 8px; */
+    /* flex: 1 1 auto; */
+    /* gap: 0.25rem; */
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    /* font-size: 0.9375rem; */
+    /* font-size: 12px; */
+    /* font-size: 1.125rem; */
+    font-size: 13px;
+    font-weight: 500;
+    color: #004275;
+    justify-content: center;
+    border: 2px solid #004275;
+    text-size-adjust: 100%;
+    /* width: 100%; */
+}
+.tab-panel{
+    display: flex;
+}
+.tab-panel-component{
+    display: flex;
+    color: rgb(23, 37, 61);
+    width: 100%;
+}
+.tab-panel-item{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+}
+/* .panel-item{
+    display: flex;
+    justify-content: space-between;
+} */
+.panel-item button{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    color: #0e1726;
+    outline: 0;
+    border: none;
+    background-color: rgb(244, 250, 253);
+    border-bottom: 1px solid #bdc5d2;
+    width: 100%;
+    text-align: left;
+}
+.panel-item h3{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    /* margin-top: 0; */
+    margin-bottom: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+.panel-btn{
+    /* padding-right: 12px; */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'MWF MDL2 Assets';
+    /* margin-bottom: 0; */
+    font-size: 13px;
+    text-align: center;
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    color: rgb(14, 23, 38);
+}
+.panel-end-btn{
+    margin-top: 1.5rem;
+    /* margin-top: 24px; */
+}
+.product{
+    background-image: url('assets/Image/361349-mobile-card-grid-product-and-services-bg-360x2110.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.product-component{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    row-gap: 0.75rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    width: 100%;
+    margin-top: 32px;
+}
+.promo-outer{
+    display: grid;
+    /* grid-area:  1/1; */
+    height: 100%;
+    border-radius: 1rem;
+    height: 100%;
+}
+.product-promo{
+    grid-area: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    background-image: url('assets/Image/361349-desktop-card-grid-product-and-services-promo-card-320x592.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.empty{
+    height: 220px;
+}
+.product-promo-component{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: rgb(23, 37, 61);
+    gap: 0.75rem;
+    padding: 16px;
+}
+.promo-component h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.component-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.75rem;
+}
+.promo-text{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+.promo-btn{
+    width: 100%;
+}
+.promo-btn a{
+    background-color: rgb(0, 120, 212);
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    border: 2px solid transparent;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0.75rem;
+    font-weight: 600;
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+    border-radius: 0.5rem;
+}
+.promo-card{
+   width: 100%;
+   display: flex;
+   height: 100%;
+   flex-wrap: wrap;
+   column-gap: 0.75rem;
+   row-gap: 0.5rem;
+   text-align: left;
+}
+.promo-card-component{
+    display: flex;
+    flex-direction: column;
+    min-width: 1px;
+    word-wrap: break-word;
+    flex: 0 0 100%;
+    text-align: left;
+    background-color: rgb(254, 254, 254);
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.card-img{
+    width: 3rem;
+    max-width: 100%;
+    height: 3rem;
+    padding: 0;
+    border: 1px solid #e6f2fb;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+}
+.card-icon img{
+    max-width: 24px;
+    max-height: 24px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+.card-promo-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    text-align: left;
+    padding-inline-end:0 ;
+}
+.card-promo-header h4{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+.card-promo-content{
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #17253d;
+    text-align-last: start;
+}
+.card-promo-link{
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: row */
+    /* font-size: ; */
+    margin-top: 2rem;
+}
+.card-promo-link a{
+    text-decoration: underline;
+    color: #004275;
+    text-underline-offset: 0.125rem;
+    /* text-underline-offset: 2px; */
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.gartner{
+    background-image: url('assets/Image/Mobile-Gartner-BG-2x.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gartner-details{
+  align-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem; 
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* margin-right: -0.25rem; */
+  /* margin-left: -0.25rem;  */
+  display: flex;
+  flex-wrap: wrap;
+}
+.gartner-card{
+    margin-top: 1.5rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+   width: 100%;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    /* padding-left: 0.25rem;
+    padding-right: 0.25rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    flex-basis:0 ;
+    flex-grow: 1;
+    max-width: 100%;
+   /* background-color: #f4fafd; */
+   background-color: #ffff;
+   text-align: left;
+   border-radius: 1rem;
+   border: 0.0625rem solid #e6f2fb;
+}
+.gartner-img{
+    aspect-ratio: 1.33333;
+    display: flex;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+
+    /* object-fit: contain; */
+    object-fit: cover;
+    padding-inline:0.75rem ;
+    padding-block: 0.5rem 0;
+}
+.gartner-img img{
+    width: 262.4px;
+    height: 196.8px;
+    aspect-ratio: 1.33333;
+    vertical-align: middle;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.gartner-header h2{
+    font-weight: 600 ;
+    font-size: 1.5rem;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+}
+.gartner-card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+.gartner-card .promo-btn{
+    padding: 1rem;
+}
+.gartner-text{
+    text-align: left;
+    align-items: flex-start;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.75rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 0;
+    color: #17253d;
+    text-align-last: start;
+}
+.resource{
+    background-color: rgb(244, 250, 253);
+    /* padding-left: 16px;
+    padding-right: 16px; */
+}
+.resource-header{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 24px; 
+    padding-top: 48px;
+}
+.resource-block-header{
+    color: #17253d;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.08em0;
+    text-align: center;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 0 0.75rem;
+}
+.resource-main-header{
+    text-align: center;
+}
+.resource-main-header h2{
+    color: #0e1726;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    letter-spacing: -0.05em;
+    font-family:"Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+}
+.tab-overflow{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.tab-content{
+    width: 1332px;
+    display: flex;
+    border-color: #bdc5d2;
+    border-width: 1px;
+    /* flex-direction: row; */
+    /* flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 0; */
+}
+.tab-content a:first-child{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.tab-content a:nth-child(n+2){
+    border-left: none;
+}
+.tab-content a{
+    border-style: solid;
+    flex: 0 0 auto;
+    border-color: #bdc5d2;
+    border-width: 1px;
+    width: 100%;
+    outline-offset: 0;
+    max-width: 221.333px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.tab-content a div{
+    background-color: #fefefe;
+    overflow: hidden;
+    padding: 0.75rem 1rem 1rem 1rem;
+}
+.resource-arrow-btn{
+    margin-top: 24px;
+}
+.resource-arrow-btn {
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    font-family: 'MWF MDL2 Assets';
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #0078d4;
+    background-color: transparent;
+    color: #0078d4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #0078d4;
+    color: white;
+}
+.left-arrow {
+    border-color: lightblue;
+    color: lightblue;
+}
+.left-arrow:hover {
+    background-color: lightblue;
+    color: white;
+}
+.resource-tabs{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.resource-tab-header{
+    text-align: center;
+}
+.resource-tab-header h3{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+    color: rgb(14, 23, 38);
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.resource-component{
+    background-image: url('assets/Image/361349-mobile-interactive-demo-resources-by-role-bg-360x719.avif') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.resource-tab-component .card-btn{
+ justify-content: center;
+}
+.resource-tab-img{
+    width: 100%;
+    /* margin-top: 24px; */
+    padding: 1rem;
+    margin-top: 1.5rem;
+    aspect-ratio: 1.77778;
+    max-width: 100%;
+    max-height: 100%;
+    backdrop-filter: blur(1.25rem);
+}
+.tab-img{
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1.77778;
+    max-height: auto;
+    height: auto;
+}
+.tab-img img{
+    object-fit: fill;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    aspect-ratio: 1.77778;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.section-master{
+    background-image: url('assets/Image/361349-desktop-full-screen-banner-azure-regions-bg-1600x372.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+}
+.section-master .btn-text{
+    color: #0e1726;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+    /* padding-bottom: 3.5rem; */
+}
+.master-header{
+    color: #f4fafd;
+    margin: 0;
+    /* padding-top: 3.5rem; */
+}
+.master-header h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+.master-detail{
+    color: #dceef8;
+    margin: 1rem 0 0;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    margin-bottom: 1.5rem;
+}
+.master-paragragh{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: -0.03em;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.section-customer{
+    background-image: url('assets/Image/Desktop-CustomerStories-BG@4x-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.customer-main-header{
+    margin: 0 0 0.75rem;
+    color: #17253d;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.customer-sub{
+    margin: 0;
+    color: #0e1726;
+}
+.customer-sub h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.05em;
+    color: #0e1726;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.customer-detail{
+    margin-top: 1.5rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    /* display: flex;
+    flex-direction: column;
+    overflow-x:scroll ;
+    white-space: nowrap;
+    scrollbar-width: none;
+    row-gap: 0.5rem;
+    column-gap: 0.75rem; */
+    /* display: flex; */
+
+    
+    
+}
+.customer-detail-carousal{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 1.5rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    width: 100%;
+    overflow-x:scroll ;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+    row-gap: 0.5rem;
+    column-gap: 0.75rem;
+    
+}
+
+.carousal-item{
+    flex: 0 0 100%;
+    white-space: normal;
+    padding: 0.1875rem;
+    background-color: #fefefe;
+    border-radius: 1rem;
+    margin: auto;
+    display: flex;
+    word-wrap: break-word;
+    position: relative;
+    height: 100%;
+    min-width: 1px;
+    flex-wrap: wrap;
+}
+.carousal-img{
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem 0;
+    border-radius: 0.5rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+
+}
+.carousal-img img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 100%;
+}
+.carousal-content{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+
+}
+.carousal-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    word-wrap: break-word;
+
+}
+.carousal-icon{
+   
+    /* border-radius: 0.5rem; */
+    overflow: hidden;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    justify-content: flex-start;
+}
+.carousal-icon img{
+    border: 0.0625rem solid #bdc5d2;
+    border-radius: 0.5rem;
+}
+.carousal-text{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #17253d;
+    font-weight: 600;
+}
+.carousal-end{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    white-space: normal;
+
+}
+.carousal-product{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.carousal-product-header h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.carousal-product-header h3 span{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* margin: 0; */
+}
+.product-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.product-item ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    gap: 0.75rem;
+    list-style: none;
+}
+.product-item ul li{
+    flex-basis: auto;
+    display: block;
+    
+}
+.github, .devop{
+    padding: 0;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+ 
