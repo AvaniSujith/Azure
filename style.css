@@ -16,11 +16,22 @@ button{
     background-color: transparent;
 } */
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    /* scrollbar-width: none; */
  }
  body{
     margin: 0;
+    /* left: 0; */
+    /* padding: 0; */
+    width: 100%;
  }
+ html{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
 @font-face {
     font-family: "MWF MDL2 Assets";
     src: url("https://db.onlinewebfonts.com/t/ba047a29b78bffd9a985b2e86b289fe8.eot");
@@ -58,7 +69,7 @@ button{
     width: 34px;
     height: 32px;
     /* margin: 2px 6px 1px 2px; */
-    margin: 2px 2px 1px 1px;
+    margin: 2px 2px 1px 0px;
     padding: 0;
     /* margin-right: 6px;
     margin-left: 2px; */
@@ -73,16 +84,22 @@ button{
     color: #000;
     font-size: 16px;
 }
+.desktop-partition{
+    display: none;
+}
 .side-btn{
     overflow: hidden;
 }
 .top{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     border-bottom: 1px solid #e6e6e6;
     height: 54px;
     width: 100%;
     background: #fff;
+    flex: 0 0 auto;
+    
 }
 .rest-btn{
     display: flex;
@@ -92,11 +109,20 @@ button{
 }
 .microsoft{
     padding: 12px 4px;
-    margin-left: 15px;
+    margin: 1px;
+    display: block;
+    float: none;
+    height: auto;
+    /* margin-left: 15px; */
+    left: calc(50% - 60px);
+    position: absolute;
 }
 .microsoft img{
     width: 108px;
     margin-top:-3px;
+    max-width: none;
+    height: auto;
+
 }
 .microsoft a{
     text-decoration: none;
@@ -118,11 +144,16 @@ button{
     margin: 0 1px;
 }
 .dropdown-icon{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     font-family: 'MWF MDL2 Assets';
     font-size: 12px;
     font-weight: 700;
     top: 2px;
-    padding-left: 7px;
+    /* padding-left: 7px; */
+    padding-left: 11px;
+    padding-top: 5px;
 }
 .navbar{
     width: 100%;
@@ -707,6 +738,110 @@ a{
     width: 100%;
     text-align: left;
 }
+.panel-item button:nth-child(1){
+    border-bottom: none;
+}
+.ai-info-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+ }
+ .ai-info-text{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+    color: #17253d;
+    font-family:'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    text-align: left;
+    
+ }
+ .ai-info-header a{
+    /* padding-bottom: 0.125rem; */
+    margin-bottom: 1.5rem;
+    color: #004275;
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+ }
+ .ai-info-header a span{
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+   font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+ .ai-img-container{
+    position: relative;
+ }
+ .image-container img{
+    aspect-ratio: auto;
+    width: 280px;
+    max-width: 100%;
+    object-fit: fill;
+    border-radius: 1rem;
+    height: auto;
+    max-height: 100%;
+
+ }
+ .play-icon{
+    height: 100%;
+    max-height: 16px;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    max-width: 100%;
+    --icon-glyph-color: #ffffff;
+ }
+.play-icon .play-btn-icon{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'MWF MDL2 Assets';
+    border: none;
+    /* font-size: 16px; */
+    font-size: 1rem;
+    text-align: center;
+    /* font-size: 1rem; */
+    /* height: a16px; */
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    color:#fff;
+    /* font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 50px; */
+ }
+ .inside-btn{
+    position: absolute;
+    /* padding: 0.75rem; */
+    /* padding-left: 119px;
+    bottom: 90px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .play-inside-btn a{
+    color: #fff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 2px solid transparent;
+    padding: 0.875rem;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+    background-color: #0078d4;
+    border-radius: 0.5rem;
+ }
 .panel-item h3{
     font-weight: 600;
     font-size: 1.125rem;
@@ -726,13 +861,15 @@ li{
     cursor: pointer;
     font-family: 'MWF MDL2 Assets';
     /* margin-bottom: 0; */
-    font-size: 13px;
+    font-size: 8px;
     text-align: center;
     /* font-size: 1rem; */
     font-weight: 400;
     line-height: 1;
     text-decoration: none;
     color: rgb(14, 23, 38);
+    padding-left: 4px;
+    /* margin-top: 33rem; */
 }
 .panel-end-btn{
     margin-top: 1.5rem;
@@ -1817,9 +1954,18 @@ footer{
 }
 @media screen and (min-width:540px){
     .info-container{
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        /* padding-top: 6rem; */
+        /* padding-bottom: 6rem; */
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
+    .heading-btn{
+        margin:1.5rem 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    
 }
 
 @media screen and (min-width:860px){   
@@ -1839,15 +1985,31 @@ footer{
     }
     
     .tab-logo{
-        padding: 16px 6px 16px 10px;
+        padding: 14px 20px 16px 10px;
         float: left;
         height: 100%;
         width:137px;
-        margin-top: 1px;
+        /* margin-top: 1px; */
+        /* margin-bottom: 2px; */
         outline-offset: -2px;
         text-decoration: none;
         background-color: transparent;
         white-space: normal;
+    }
+    .tab-head-azure{
+        padding: 14px 6px 16px 10px;
+        float: left;
+        height: 100%;
+        /* width:137px; */
+        /* margin-top: 1px; */
+        /* margin-bottom: 2px; */
+        outline-offset: -2px;
+        text-decoration: none;
+        background-color: transparent;
+        white-space: normal;
+    }
+    .tab-head-azure span{
+        color: #262626;
     }
     .tab-logo img{
         display: block;
@@ -1879,9 +2041,9 @@ footer{
         display: block;
         font-size: 18px;
         font-weight: 600;
-        margin-top: 15px;
+        /* margin-top: 15px; */
         /* margin-left: 9px; */
-        padding-left: 19px;
+        padding-left: 18px;
     }
     .azure-border{
         height: 24px;
@@ -1897,6 +2059,7 @@ footer{
         white-space: nowrap;
         padding-left: 2px;
         padding-right: 1px;
+        -webkit-box-flex: 1;
         float: left;
         flex: 1 1 auto;
     }
@@ -1905,6 +2068,8 @@ footer{
         flex-direction: row;
         padding: 0;
         list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
         white-space: nowrap;
         margin: 0;
         
@@ -1948,6 +2113,10 @@ footer{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        /* background-size: ; */
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
     }
     .info-container-main{
         display: flex;
@@ -1958,12 +2127,18 @@ footer{
         text-align: left;
     }
     .info-container{
-       
+        padding-top: 6rem;
+        padding-bottom: 6rem;
         padding-right: 3.5rem;
         padding-left: 3.5rem;
         margin: 0 0 1rem;
         min-height: 580px;
-        max-width: 450px;
+        /* max-width: 450px; */
+        /* background-image: url('assets/Image/361349-mobile-hero-slim-bg-360x202.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+        object-fit: cover;
         /* display: flex;
         justify-content: normal;
         align-items: center;
@@ -2042,4 +2217,33 @@ footer{
      .btn-contents-next .btn-text{
         color: #f4fafd;
      }
+     .mobile-partition{
+        display: none;
+     }
+     .desktop-partition{
+        display: block;
+     }
+     .ai-info-contents{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        
+     }
+     .ai-info-text{
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+        color: #17253d;
+        font-family:'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+        text-align: left;
+        
+     }
+    .ai-info-header{
+        padding-bottom: 0.125rem;
+
+     }
+     
 }
+
