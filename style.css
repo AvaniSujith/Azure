@@ -868,13 +868,15 @@ li{
     line-height: 1;
     text-decoration: none;
     color: rgb(14, 23, 38);
-    padding-left: 4px;
+    /* padding-left: 3px; */
+     
+    padding-top:9px ;
     /* margin-top: 33rem; */
 }
-.panel-end-btn{
+/* .panel-end-btn{
     margin-top: 1.5rem;
-    /* margin-top: 24px; */
-}
+    margin-top: 24px;
+} */
 .product{
     background-image: url('assets/Image/361349-mobile-card-grid-product-and-services-bg-360x2110.avif');
     background-repeat: no-repeat;
@@ -2088,22 +2090,38 @@ footer{
         display: inline-block;
         margin-top: 1px;
         text-align: left;
-        padding: 16px 30px 16px 12px;
+        padding: 16px 24.5px 16px 12px;
         background: transparent;
         color: #262626;
         white-space: nowrap;
-        margin-right: -1opx;
+        margin-right: -1px;
         font-size:13px;
         font-weight: 400;
         line-height: normal;
         font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+    .tablet .panel-btn{
+        padding-top: 7px;
+    }
     .nav-item .panel-btn{
         font-size: 8px;
         font-weight: 700;
         color: rgb(38, 38, 38);
-        
+        /* margin-left: 4px; */
+        margin-left: 7px;
+        /* letter-spacing: -0.03em;
+        line-height: 1.5rem; */
+        /* margin-top: 20px; */
+        position: absolute;
     }
+    .nav-button-search{
+        margin-top:12px ;
+        margin-right:9px;
+    
+    }
+    /* .nav-item:nth-child(n+2) button {
+        padding: 16px 21px 16px 12px;
+    } */
     .azure-info{
         display: none;
     }
@@ -2113,15 +2131,53 @@ footer{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        /* background-size: ; */
+        
         object-fit: cover;
+
         height: 100%;
+        width: 100%;
+    }
+    .azure-bg-image{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        transform: unset;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    .azure-image-collection{
+        display: inline;
+        max-width: 100%;
+
+        width: 100%;
+        height: auto;
+    }
+    .azure-info-section{
+        padding-left: .5rem;
+        padding-right: .5rem;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        position: relative;
         width: 100%;
     }
     .info-container-main{
         display: flex;
-        justify-content: normal;
+        column-count: 2;
+        order: row;
+        /* justify-content: center; */
+        align-items: center;
+        min-height: 388px;
+        text-size-adjust: 100%;
+        line-height: 24px;
+        letter-spacing: -0.48px;
+        /* height: 100; */
         flex-direction: row;
+        /* flex-grow:0;
+        flex-shrink: 0;
+        flex-basis: calc(50%-8px); */
         flex-wrap: wrap;
         align-items: center;
         text-align: left;
@@ -2132,13 +2188,22 @@ footer{
         padding-right: 3.5rem;
         padding-left: 3.5rem;
         margin: 0 0 1rem;
-        min-height: 580px;
+        min-height:388px;
+        /* column-count: 2; */
+        
+        /* display: flex;
+        flex-direction: column; */
+        /* flex-grow:0;
+        flex-shrink: 0;
+    
+        flex-basis: 0%; */
         /* max-width: 450px; */
         /* background-image: url('assets/Image/361349-mobile-hero-slim-bg-360x202.avif');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; */
-        object-fit: cover;
+        /* width: 366px; */
+        /* object-fit: cover; */
         /* display: flex;
         justify-content: normal;
         align-items: center;
@@ -2148,7 +2213,12 @@ footer{
     }
     .divider-sample{
         display: flex;
-        flex: 0 0 calc(calc(100% - calc(1rem * (2-1)))/2);
+        /* flex: 0 0 calc(calc(100% - calc(1rem * (2-1)))/2); */
+        flex-grow:0;
+        flex-shrink: 0;
+        /* flex-basis: calc(50%-8px); */
+        flex-basis: 0%;
+        /* width: 366px; */
     }
     .heading{
         font-size: 0.75rem;
@@ -2244,6 +2314,213 @@ footer{
         padding-bottom: 0.125rem;
 
      }
-     
+     /* .ai-chat-banner{
+        display: flex;
+        flex-direction: row;
+     } */
+     .ai-chat{
+        background:rgba(0, 0, 0, 0);
+        background-image:linear-gradient(131deg, rgb(0, 50, 89) 0%, rgb(9, 31, 44) 50.25%, rgb(0, 66, 117) 100%);
+        color: rgb(220, 238, 248);
+        display: block;
+        font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+     }
+     .ai-chat-content{
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        display: flex;
+        flex-direction:row;
+        gap: 0;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+        width: 100%;
+        align-items: normal;
+     }
+     .ai-pwr-text{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+        text-align: left;
+        padding-block: 0.75rem;
+        padding-inline-end: 0.75rem;
+        flex: 0 0 100%;
+     }
+     .ai-text-header h2{
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 2.25rem;
+        letter-spacing: -0.05em;
+        margin-bottom: 0;
+        font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+     }
+     .ai-text-content{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 0;
+        font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+        text-align: left;
+        text-align-last: start;
+        text-size-adjust: 100%;
+     }
+     .boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        flex: 0 0 100%;
+
+     }
+     .white-box{
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        gap: 0.5rem;
+        position: relative;
+        background-color: #fefefe;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
+        overflow: hidden;
+        border: none;
+        max-width: 656px;
+     }
+     .white-box div{
+        align-items: center;
+        display: flex;
+        width: 100%;
+     }
+     .white-box input{
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        padding-block: 1.25rem;
+        border-radius: 0.5rem;
+        padding-inline-start: 1rem;
+        padding-inline-end: 60px;
+     }
+     .white-box button{
+        color: rgb(0, 66, 117);
+        font-size: .9375rem;
+        font-weight: 600;
+        border: 2px solid transparent;
+        border-radius: 0.5rem;
+        padding: 0.875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+     }
+     /* .box-bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0.25rem;
+        background: linear-gradient(90deg, #0a86c4 .3%, #71ede8 100%);
+     } */
+      .ai-buttons{
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+      }
+      .ai-msg{
+        background-color: transparent;
+        border: 2px solid #8dc8e8;
+        color: rgb(244, 250, 253);
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+        width: auto;
+        cursor: pointer;
+        border-width: 0.0625rem;
+        padding: 0.5rem 10px;
+        border-radius: 0.5rem;
+      }
+      .desk-sticky-nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto ;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+      }
+      .desktop-dropdown-menu{
+        padding: 0;
+        border-radius: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        overflow: hidden;
+        text-align: left;
+        left: 0;
+        right: auto;
+      }
+      .desk-dropdown{
+        flex-basis: 0;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        max-width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        height: 100%;
+        text-align: left;
+        
+      }
+      .desk-dropdown-items{
+        display: flex;
+        flex-direction: row;
+        /* column-gap: 3rem; */
+        width: 716px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+
+      }
+      .menu-list{
+        white-space: nowrap;
+        width: fit-content;
+        list-style: none;
+        margin-top: 1rem;
+        padding-bottom:0.25rem ;
+        padding-inline-start: 0.25rem;
+        display: flex;
+        text-align: left;
+
+      }
+      .menu-list a{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        border-radius: 0;
+        align-items: start;
+        justify-content: space-between;
+        color:#0067b8;
+        margin-inline-end: 3rem;
+        margin-inline-start: 0;
+      }
+      .menu-list-text{
+        padding-inline: 0.5rem;
+
+        padding-block-end: 1rem;
+      }
 }
 
