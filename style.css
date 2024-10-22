@@ -50,7 +50,8 @@ button{
 .nav-button-side{
     width:48px;
     height: 48px;
-    padding: 6px 0 8px;
+    /* padding: 6px 0 8px; */
+    padding: 5px 0 8px;
     margin: 1px;
     background: transparent;
     border: none;
@@ -153,7 +154,7 @@ button{
     top: 2px;
     /* padding-left: 7px; */
     padding-left: 11px;
-    padding-top: 5px;
+    padding-top: 4px;
 }
 .navbar{
     width: 100%;
@@ -340,6 +341,9 @@ a{
     padding: 12px;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
 }
 .sticky-nav{
   align-items: center;
@@ -1954,6 +1958,9 @@ footer{
     list-style-type:none;
     font-family:'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
 }
+.section-ai{
+    display: none;
+}
 @media screen and (min-width:540px){
     .info-container{
         /* padding-top: 6rem; */
@@ -1968,9 +1975,13 @@ footer{
         gap: 0.5rem;
     }
     
+    
 }
 
 @media screen and (min-width:860px){   
+    .section-ai{
+        display: block;
+    }
     .mobile{
         display: none;
     }
