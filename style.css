@@ -3442,20 +3442,49 @@ footer{
         padding-top: 15px;
         padding-bottom: 30px;
         line-height: 18px; */
-        
+        margin-right: 5.6px;
     }
-    .main-heading h1{
+    .desktop-search-nav{
+        margin-right: 7.5px;
+    }
+    /* .main-heading h1{
 
-    }
-}
-@media screen and (min-width:1086px){
-    /* .nav-item:nth-child(2){
-        display: inline-block;
     } */
 }
+/* @media screen and (min-width:1086px){
+    .nav-item:nth-child(2){
+        display: inline-block;
+    }
+} */
+.heading{
+    margin-bottom: 17px;
+}
+.main-heading h1{
+    line-height: 48px;
+}
+@media screen and (min-width:1088px){
+    .tab-logo{
+        padding: 14px 20px 16px 10px;
+        /* margin-right: -2px; */
+    }
+}
 
-
-
+@media screen and (min-width:1093px){
+    body{
+        padding-right: 2.5px;
+        /* overflow-x: hidden; */
+    }
+    .desktop-nav-group .nav-item:first-child a{
+        padding: 16.5px 8px 10px;
+    }
+    .nav-item button .panel-btn{
+        padding-top: 6.5px;
+    }
+    .end-nav-item a{
+        padding-top: 16.5px;
+    }
+    
+}
 
 
 
