@@ -265,6 +265,10 @@ button{
   flex-direction: column;
   gap: 0.5rem;
 }
+.btn-contents:hover{
+    cursor: pointer;
+    background-color: #cbe6f4;
+}
 .btn-text{
     padding-bottom: 2px;
     display: block;
@@ -3450,18 +3454,19 @@ footer{
     /* .main-heading h1{
 
     } */
+    .heading{
+        margin-bottom: 17px;
+    }
+    .main-heading h1{
+        line-height: 48px;
+    }
 }
 /* @media screen and (min-width:1086px){
     .nav-item:nth-child(2){
         display: inline-block;
     }
 } */
-.heading{
-    margin-bottom: 17px;
-}
-.main-heading h1{
-    line-height: 48px;
-}
+
 @media screen and (min-width:1088px){
     .tab-logo{
         padding: 14px 20px 16px 10px;
