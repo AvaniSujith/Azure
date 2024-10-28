@@ -260,7 +260,9 @@ button{
 .mobile-azure-info{
     display: none;
 }
-
+.mobile .top .side-btn .nav-button-side{
+    padding: 6px 0px 7px;
+}
 .btn-contents{
   display: flex;
   flex-direction: column;
@@ -793,8 +795,23 @@ a{
     text-size-adjust: 100%;
     /* width: 100%; */
 }
+.soln-main-content .scroll-btn{
+    position: absolute;
+    right: 16px;
+    /* margin-left: 4px; */
+    background-image:linear-gradient(274deg, rgb(244, 250, 253) 25%, rgba(242, 242, 242, 0) 100%);
+    background-color: transparent;
+}
+.soln-main-content .scroll-btn button{
+    background-color: transparent;
+    background-image:linear-gradient(270deg, rgb(244, 250, 253) 25%, rgba(242, 242, 242, 0) 100%)
+}
+.soln-main-content .scroll{
+    min-height: 40px;
+}
 .tab-panel{
     display: flex;
+    margin-top: 1.55rem;
 }
 .tab-panel-component{
     display: flex;
@@ -855,11 +872,16 @@ a{
     gap: 0.5rem;
 
  }
+ .ai-informations  .ai-info-header a span{
+    padding-top: 3px;
+    padding-bottom: 2px;
+ }
  .ai-info-header a span{
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   letter-spacing: -0.48px;
  }
  .ai-img-container{
     position: relative;
@@ -878,10 +900,11 @@ a{
     height: 100%;
     max-height: 16px;
     font-size: 1rem;
+    background-color:  #0078d4;
     color: #fff;
     width: 100%;
     max-width: 100%;
-    --icon-glyph-color: #ffffff;
+    /* --icon-glyph-color: #ffffff; */
  }
 .play-icon .play-btn-icon{
     background: transparent;
@@ -928,6 +951,60 @@ a{
     background-color: #0078d4;
     border-radius: 0.5rem;
  }
+ /* .play-btn-icon::before{
+    content: "";
+    font-family: 'MWF MDL2 Assets';
+    font-size: 1rem;
+    color: white;
+
+ } */
+  .demo-panel-text-icon-ai::before{
+    font-family: 'MWF MDL2 Assets';
+    content: "";
+    font-size: 1em;
+    /* font-size: 16px; */
+    font-weight: 400;
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+    line-height: 1.5625rem;
+    top: auto;
+    color: #0e1726;
+    transform: rotate(-180deg);
+    margin-top: auto;
+  }
+  .demo-panel-text-icon::before{
+    font-family: 'MWF MDL2 Assets';
+    content: "";
+    font-size: 1em;
+    /* font-size: 16px; */
+    font-weight: 400;
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+    line-height: 1.5625rem;
+    top: auto;
+    color: #0e1726;
+    /* transform: rotate(-180deg); */
+    margin-top: auto;
+  }
+  .demo-panel-text-icon, .demo-panel-text-icon-ai {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+  }
+  .panel-item button{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.1px solid transparent;
+    border-bottom-color:rgb(14, 23, 38);
+    border-top-color:rgb(14, 23, 38) ;
+  }
+  .panel-item:first-child button{
+    border: none;
+  }
 .panel-item h3{
     font-weight: 600;
     font-size: 1.125rem;
@@ -2052,6 +2129,9 @@ footer{
 .search-btn-desk{
     display: none;
 }
+.footer-sticky-btn{
+    display: none;
+}
 @media screen and (min-width:324px){
     .avail-card:nth-child(2) .card-media{
         /* height: 113.137px !important; */
@@ -2124,6 +2204,9 @@ footer{
     .tablet{
         display: block;
 
+    }
+    .footer-sticky-btn{
+        display: block;
     }
     .tab-header{
         margin-bottom: 2px;
