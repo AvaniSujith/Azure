@@ -269,9 +269,10 @@ button{
   flex-direction: column;
   gap: 0.5rem;
 }
-.btn-contents:hover{
+ .heading-btn .btn-contents:first-child a:hover{
     cursor: pointer;
     background-color: #cbe6f4;
+
 }
 .btn-text{
     padding-bottom: 2px;
@@ -323,7 +324,8 @@ a{
     letter-spacing: -0.02em;
  }
 .middle{
-    margin: 4px;
+    /* margin: 4px; */
+    padding: 4px;
 }
 .cat-logo-button-cont {
     margin-left: auto;
@@ -341,7 +343,7 @@ a{
 /* .nav-btn{
     box-shadow: ;
 } */
- .mobile-part{
+ .mobile-partition{
     /* box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px; */
     /* height: 60px; */
     /* box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12,rgba(0, 0, 0, 0.12)) ; */
@@ -355,6 +357,7 @@ a{
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3), 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 10px 30px rgba(0, 0, 0, 0.2); */
     box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    background-color: #fefefe;
  }
  
 .down{
@@ -1009,7 +1012,8 @@ a{
     transform: translate(-50%, -50%);
  }
  .play-btn-icon::before{
-    content: "";
+    /* content: ""; */
+    content: "\25B6";
     font-family: 'MWF MDL2 Assets';
     font-weight: 400;
     line-height: 1;
@@ -1383,7 +1387,35 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    object-fit: cover;
 }
+/* .gartner-img-container{
+
+ width: 100%;
+ max-height: 100%;
+ display: block;
+ z-index: -1;
+ }
+.gartner-img-colln{
+    height: 100%;
+    width: 100%;
+}
+.gartner-img-colln picture{
+    height: 100%;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+   
+}
+.gartner-img-colln picture img{
+    
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    display: block;
+} */
 .gartner-details{
   align-content: center;
   padding-top: 3rem;
@@ -1662,10 +1694,12 @@ li{
     font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .resource-component{
-    background-image: url('assets/Image/361349-mobile-interactive-demo-resources-by-role-bg-360x719.avif') ;
+    
+    background-image: url('assets/Image/normal-361349-mobile-interactive-demo-resources-by-role-bg-360x719\ \(1\).avif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
 }
 .resource-tab-component .card-btn{
  justify-content: center;
@@ -2494,6 +2528,14 @@ footer{
     .gartner-img img {
         height: 100%;
     }
+    .gartner{
+        /* background-image: url('assets/Image/Mobile-Gartner-BG-2x.avif'); */
+        background-image: url('assets/Image/540-Mobile-Gartner-BG-2x.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
     .promo-btn {
         display: flex;
 
@@ -2531,6 +2573,15 @@ footer{
     .resource-tab-content{
         padding-left: 0.25rem;
         padding-right: 0.25rem;
+    }
+    .resource-component{
+    
+        
+        background-image: url('assets/Image/540\(2\)-361349-mobile-interactive-demo-resources-by-role-bg-360x719.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
     }
     .master .btn-contents {
         display: flex;
@@ -3540,7 +3591,8 @@ background-size: cover; */
         display: block;
       }
       .gartner-details{
-        background-image: url('assets/Image/Mobile-Gartner-BG-2x.avif');
+        /* background-image: url('assets/Image/Mobile-Gartner-BG-2x.avif'); */
+        background-image: url('assets/Image/860-Desktop-Gartner-BG@4x.avif');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -3575,13 +3627,13 @@ background-size: cover; */
         max-width: 50%;
         
     }
-    .resource{
+    /* .resource{
         padding-top: 2rem;
         padding-bottom: 4.5rem;
         padding-right: 3.5rem;
         padding-left: 3.5rem;
 
-    }
+    } */
     .resource-tab-component{
         margin-inline: auto;
         width: calc(83.33333%);
@@ -3658,6 +3710,14 @@ background-size: cover; */
     }
     .resource-arrow-btn{
         display: none;
+    }
+    .resource-component{
+    
+        background-image: url('assets/Image/860\(2\)-361349desktop-interactive-demo-resources-by-role-bg-1600x768.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
     }
     .section-step{
         padding-left: 3.5rem;
@@ -4111,7 +4171,19 @@ background-size: cover; */
     .nav-item:last-child{
         display: inline-block;
     }
-    
+    .gartner-details{
+        background-image: url('assets/Image/1084-Desktop-Gartner-BG@4x.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .resource-component{
+        background-image: url('assets/Image/1084\(2\)-361349desktop-interactive-demo-resources-by-role-bg-1600x768.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
     .footer-group{
         /* display: flex; */
         /* width:33.3333% */
@@ -4262,6 +4334,20 @@ background-size: cover; */
     }
     .search-btn{
         display: none;
+    }
+    .gartner-details{
+        background-image: url('assets/Image/1400-Desktop-Gartner-BG@4x.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+    .resource-component{
+        background-image: url('assets/Image/1400\(2\)-361349desktop-interactive-demo-resources-by-role-bg-1600x768.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
     }
 }
 @media screen and (min-width:1440px){
