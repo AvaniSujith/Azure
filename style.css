@@ -26,6 +26,7 @@ button{
     /* left: 0; */
     /* padding: 0; */
     width: 100%;
+    background-color: #f7f7f7;
  }
  html{
     width: 100%;
@@ -1822,7 +1823,7 @@ li{
     padding: 0.1875rem;
     background-color: #fefefe;
     border-radius: 1rem;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     word-wrap: break-word;
     position: relative;
@@ -1930,7 +1931,7 @@ li{
 .product-item ul{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-start;
     margin: 0;
     padding: 0;
@@ -1972,7 +1973,14 @@ li{
     aspect-ratio: 1.33333 ;
     object-fit: cover;
     vertical-align: middle;
+    max-width: 20px;
+    max-height: 20px;
 }
+.git-icon , .devop-icon {
+    width: 16px;
+    height: 20px;
+} 
+
 .git-title, .devop-title, .visual-title, .enterprise-title{
     display: flex;
     flex-grow: 1;
@@ -2003,7 +2011,7 @@ li{
     margin-top: 1.5rem;
 }
 .section-customer .resource-arrow-btn{
-    margin-top: 0;
+    margin-top: 20px;
 }
 .section-customer .card-btn{
     margin-top: 1.5rem;
@@ -2151,6 +2159,8 @@ li{
     margin-top: -.5rem;
     margin-bottom:-.5rem ;
     text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .azure-icon-btn a{
     background-color: #e6e6e6;
@@ -2181,8 +2191,11 @@ li{
 }
 .social-icon{
     margin-left: 0.75rem;
+    margin-left: 0.75rem;
     display: block;
     text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .social-icon ul{
     vertical-align: middle;
@@ -2263,6 +2276,25 @@ footer{
     color: #616161;
     text-decoration: none;
 }
+.customer-detail{
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    
+}
+.carousal-item{
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+}
+.customer-detail-carousal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    margin: auto;
+    column-gap: 0.75rem;
+    row-gap: 0.75rem;
+    
+}
 .footer-end{
     display: flex;
     flex-wrap: wrap;
@@ -2285,14 +2317,22 @@ footer{
     text-decoration: none;
     font-style: normal;
     font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4px;
+}
+.footer-group{
+    padding: 0 12px;
 }
 .footer-lang span:first-child{
     font-family: 'MWF MDL2 Assets';
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-   
+    font-size: 20px;
+    /* width: 40px;
+    height: 40px; */
+    margin-right: 10px;
+    display: block;
     cursor: pointer;
+    /* padding-top: 5px; */
 }
 .footer-privacy{
     display: flex;
@@ -2333,11 +2373,13 @@ footer{
     font-size: 11px;
     line-height: 16px;
     margin: 3px 0;
+    margin-top: 12px;
     color: #616161;
     padding-left: 0;
     list-style-type: none;
     padding:0 ;
     font-family:'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    /* padding-bottom: 16px; */
 }
 .end-group-items li{
     padding: 6px 10px 0 0;
@@ -2365,6 +2407,7 @@ footer{
 .footer-sticky-btn{
     display: none;
 }
+
 @media screen and (min-width:324px){
     .avail-card:nth-child(2) .card-media{
         /* height: 113.137px !important; */
@@ -2372,6 +2415,9 @@ footer{
         width: 100%;
     }
 }
+/* @media screen and (min-width:460px){
+    
+} */
 @media screen and (min-width:540px){
     /* .info-container{
         padding-top: 6rem;
@@ -2380,12 +2426,20 @@ footer{
         padding-right: 4rem;
     } */
      .card-title{
-        padding-left: 4.25rem;
-        padding-right: 4.25rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         
      }
      .card-division{
         padding: 0 64px;
+        padding-right: 68px;
+     }
+     .avail-card .btn-icon {
+        padding-bottom: 0px;
+        /* max-width: 35px;
+        width: 100%;
+        max-height: 34px;
+        height: 100%; */
      }
      .info-container{
         padding-left: 4rem;
@@ -2398,32 +2452,127 @@ footer{
         gap: 0.5rem;
     }
     .solutions{
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        /* padding-top: 6rem; */
+        padding-top: 3.5rem;
+        /* padding-bottom: 6rem; */
+        padding-bottom: 3.5rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
-
+    .soln-main{
+        padding-left:0px ;
+        padding-right: 0px;
+    }
+    .soln-main-content .scroll-btn{
+        right: 4rem;
+    }
+    .soln-main-content, .product-main-content{
+        max-width: 408px;
+    }
     .solution{
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
+    .gartner-img img {
+        height: 100%;
+    }
+    .promo-btn {
+        display: flex;
+
+    }
+    /* .ai-img-container{
+        padding: 0 0.5rem;
+    } */
     .product{
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        /* padding-top: 6rem; */
+        padding-top: 3.5rem;
+        /* padding-bottom: 6rem; */
+        padding-bottom: 3.5rem;
         padding-right: 4rem;
         padding-left: 4rem ;
     }
+    .product .product-content .scroll-btn {
+        right: 4rem;
+    }
+    .gartner-details{
+        padding-left: 4.25rem;
+        padding-right: 4.25rem;
+    }
+    .resource-header{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .resource-component{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .resource-tabs{
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    .resource-tab-content{
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+    .master .btn-contents {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
     .section-master{
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
     .section-customer{
-        padding-top: 4.5rem;
-        padding-bottom: 4.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
     .section-step{
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        padding-left: 4rem;
+        padding-right: 4.25rem;
+    }
+    .icons{
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: space-between; */
+        gap: 0px;
+        flex-wrap: nowrap;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: calc(1.5rem + 8px);
+        padding-bottom: calc(1.5rem + 8px);
+    }
+    .azure-icon-btn{
+        padding: 0rem;
+    }
+    .social-icon{
+        padding: 0rem;
+        margin: 0rem;
+
+    }
+    .footer-group{
+        /* display: flex; */
+        /* width:33.3333% */
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+    /* .footer-group .group{
+        display: ;
+        width: 33.333%;
+    } */
+}
+@media screen and (min-width:541px){
+    .demo-panel-text-icon, .demo-panel-text-icon-ai{
+        justify-content: flex-end;
     }
 }
 
