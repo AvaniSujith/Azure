@@ -522,6 +522,7 @@ a{
 }
 .card-content{
     padding: 1rem;
+    padding-top: calc(1rem + 0.812px);
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -595,7 +596,7 @@ a{
    
 }
 .card-info{
-    padding-inline-end: 0rem;
+    padding-inline-end: 1.5rem;
     text-align: left;
 }
 .card-token-text{
@@ -661,7 +662,7 @@ a{
 .avail-card .btn-icon{
     height:  34.2px;
     width:  33.9px;
-    padding-bottom: 9px;
+    /* padding-bottom: 9px; */
 }
 .avail-card:nth-child(2) .card-media{
     /* height: 113.137px !important; */
@@ -2076,7 +2077,7 @@ li{
     min-width: 1px;
     background-clip: border-box;
     word-wrap: break-word;
-    height: 100%;
+    /* height: 100%; */
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
@@ -2415,8 +2416,21 @@ footer{
         width: 100%;
     }
 }
-/* @media screen and (min-width:460px){
-    
+@media screen and (min-width:375px){
+    .soln-main-content, .product-main-content{
+        max-width: 696px;
+        width: 310px;;
+    }
+}
+@media screen and (min-width:425px){
+    .soln-main-content, .product-main-content{
+        width:388px;
+    }
+}
+/* @media  screen and (min-width:768px) {
+    .soln-main-content, .product-main-content{
+        width: 760px;
+    }
 } */
 @media screen and (min-width:540px){
     /* .info-container{
@@ -2575,7 +2589,12 @@ footer{
         justify-content: flex-end;
     }
 }
-
+@media screen and (min-width:768px){
+    .soln-main-content, .product-main-content{
+        max-width: 100%;
+        width:700px;
+    }
+}
 @media screen and (min-width:860px){   
     .section-ai{
         display: block;
@@ -2591,6 +2610,7 @@ footer{
         display: block;
     }
     .tab-header{
+        background-color: rgb(255, 255, 255);
         margin-bottom: 2px;
         height: 54px;
         padding-left: 24px;
@@ -3350,6 +3370,16 @@ background-size: cover; */
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding: 0 3.5rem;
+    }
+    .card-content{
+        padding: 1.5rem;
+    }
+    /* .avail-card:nth-child(2) .card-content{
+        padding-bottom: 65px;
+    } */
+    .avail-card:nth-child(2) .card-btn {
+        margin-top: 96px;
     }
     .main-content{
         padding-top: 6rem;
@@ -3448,6 +3478,52 @@ background-size: cover; */
         flex-direction: column;
         /* align-items: stretch; */
      }
+     .tab-panel{
+        display: flex;
+        margin-top: 1.49rem;
+        max-height: 492px;
+        height: 100vh !important;
+        width: 100%;
+        /* flex-basis: calc(33% - 1rem / 2); */
+    }
+    .tab-panel-component{
+        display: flex;
+        color: rgb(23, 37, 61);
+        /* width: 100%; */
+        /* width: calc( 100% - 503.81px); */
+        width: 60%;
+        
+
+    }
+    .tab-panel-item{
+        /* width: calc(100% - 503.81px); */
+        width: 236.19px;
+        /* flex-basis: calc(33% - 1rem / 2); */
+        /* width: 60%; */
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+    .tab-panel-item .panel-item{
+        padding-left: 3rem;
+    }
+    .ai-img-container{
+        right: 0;
+        width: 370px;
+        height: 277.5px;
+
+
+    }
+    .tab-panel-item .panel-item:first-child{
+        /* border-left: 0.25rem solid rgb(23, 37, 61); */
+        border-left: 3.14062px solid rgb(23, 37, 61);
+    }
+    /* .panel-item{
+        display: flex;
+        justify-content: space-between;
+    } */
      .gartner{
         display: none;
      }
@@ -3456,6 +3532,9 @@ background-size: cover; */
         flex-direction: row;
         flex-wrap: wrap;
      } */
+      .gartner-tab{
+        display: block;
+      }
 
    .gartner-card{
     flex-direction: row-reverse;
@@ -4012,6 +4091,16 @@ background-size: cover; */
         display: inline-block;
     }
        
+    .footer-group{
+        /* display: flex; */
+        /* width:33.3333% */
+        display: grid;
+        grid-template-columns: repeat(6,minmax(0,1fr));
+        padding: 0 5%;
+    }
+    .group{
+        width: 100%;
+    }
 }
 @media screen and (min-width:1085px){
     
