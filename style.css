@@ -3847,10 +3847,21 @@ background-size: cover; */
         padding-top: 7.3rem;
     }
 }
+@media screen and (min-width:984px){
+    .desk-dropdwn-btn{
+        display: none;
+    }
+    .desk-sticky-nav{
+        justify-content: space-between;
+    }
+}
 @media screen and (min-width:990px){
     .sticky-btn .btn-icon{
         font-size: 24.5px;
         padding-bottom: 16px;
+    }
+    .soln-main-content .scroll-btn, .product .product-content .scroll-btn{
+        display: none;
     }
 }
 @media screen and (min-width:1011px){
@@ -4244,9 +4255,37 @@ background-size: cover; */
     }
 }
 @media screen and (min-width:1440px){
-    .info-container{
+    .info-container-main{
         padding-left: 5%;
         padding-right: 5%;
+        /* width: 90%; */
+        /* box-sizing: content-box; */
+    }
+    .main-heading h1{
+        /* font-size: 2rem; */
+        font-size:  48px;
+        font-weight: 600;
+        /* line-height: 2.5rem; */
+        line-height: 56px;
+        letter-spacing: -2.4px;
+
+    }
+    .product-component{
+        /* display: grid;
+        grid-template-columns: 25% 75%;
+        height: 100%; */
+        display: flex;
+        /* gap: 0.25rem; */
+        /* column-gap: ; */
+    }
+    .promo-outer{
+        flex: 0 0 25%;
+        /* padding-right: 0.5rem; */
+        /* height: 100%; */
+    }
+    .promo-card{
+        flex: 0 0 75%;
+        padding-left: 1rem;
     }
 
 }
