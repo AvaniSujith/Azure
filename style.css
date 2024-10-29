@@ -1672,17 +1672,21 @@ li{
 }
 .resource-tab-img{
     width: 100%;
+    position: relative;
     /* margin-top: 24px; */
     padding: 1rem;
     margin-top: 1.5rem;
     aspect-ratio: 1.77778;
     max-width: 100%;
     max-height: 100%;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(1.25rem);
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.6);
-    /* opacity: 0.2; */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* background-color: #f4fafd; */
+    /* opacity: 1; */
 }
 .tab-img{
     border-radius: 0.5rem;
@@ -3535,6 +3539,12 @@ background-size: cover; */
       .gartner-tab{
         display: block;
       }
+      .gartner-details{
+        background-image: url('assets/Image/Mobile-Gartner-BG-2x.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
    .gartner-card{
     flex-direction: row-reverse;
@@ -4101,7 +4111,7 @@ background-size: cover; */
     .nav-item:last-child{
         display: inline-block;
     }
-       
+    
     .footer-group{
         /* display: flex; */
         /* width:33.3333% */
@@ -4286,6 +4296,12 @@ background-size: cover; */
     .promo-card{
         flex: 0 0 75%;
         padding-left: 1rem;
+    }
+    .section-master{
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
 }
