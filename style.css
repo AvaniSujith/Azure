@@ -4423,6 +4423,8 @@ background-size: cover; */
         background-size: cover;
         object-fit: cover;
     }
+
+    
 }
 @media screen and (min-width:1440px){
     .desktop-header{
