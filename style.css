@@ -4425,6 +4425,14 @@ background-size: cover; */
     }
 }
 @media screen and (min-width:1440px){
+    .desktop-header{
+        /* margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px; */
+        max-width: 1600px;
+        height: 100%;
+        margin: 0 auto;
+    }
     .info-container-main{
         padding-left: 5%;
         padding-right: 5%;
@@ -4533,9 +4541,9 @@ background-size: cover; */
     }
 
 }
-@media screen and (min-width:1600px){
+/* @media screen and (min-width:1600px){
     .desktop-header{
-        max-width: 100%;
+       width: 100%;
     }
     
-}
+} */
