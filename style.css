@@ -4042,6 +4042,7 @@ background-size: cover; */
     }
     .desktop{
         display: block;
+        background-color: #fefefe;
         /* width: calc(100% + 3.6px); */
         /* overflow-y: overlay;
         width: 100%; */
@@ -4463,4 +4464,10 @@ background-size: cover; */
         padding-bottom: 6rem;
     }
 
+}
+@media screen and (min-width:1600px){
+    .desktop-header{
+        max-width: 100%;
+    }
+    
 }
