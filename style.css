@@ -3814,7 +3814,7 @@ background-size: cover; */
     .brands{
         display: flex;
         list-style-type: none;
-        /* justify-content: center; */
+        justify-content: center;
         /* width: 100%; */
         width: 100vw;
         box-sizing: border-box;
@@ -4428,8 +4428,76 @@ background-size: cover; */
     .info-container-main{
         padding-left: 5%;
         padding-right: 5%;
-        /* width: 90%; */
+        width: 90%;
+        
+        max-width: 1328px;
+        margin-left: auto;
+        margin-right: auto;
         /* box-sizing: content-box; */
+    }
+    .section-ai{
+        background: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(181deg, #003259 0%, #091f2c 0%, #004275 100%);
+    }
+    .ai-chat, .desk-sticky-nav, .card-title, .card-division {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+    }
+    .solution-content, .soln-main{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+        /* padding-left: 0.25rem; */
+        padding-left: 4rem;
+        /* padding-right: 0.25rem; */
+        padding-right: 4rem;
+    }
+    .product-content, .card-btn{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .gartner-card{
+        margin-left: auto;
+        margin-right:auto;
+        max-width: 1328px;
+        /* padding-left: 4rem;
+        padding-right: 4rem; */
+    }
+    .resource-header{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+    }
+    .resource-tabs, .resource-tab-content{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+
+    }
+    .customer-header, .customer-detail, .tab-customer-detail{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+    }
+    .step-header, .step-content{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+    }
+    .icons{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1328px;
+        justify-content: center;
+    }
+    .footer-group{
+        margin: 0 auto;
+        max-width: calc(1600px + 10%);
+        padding: 0 5%;
     }
     .main-heading h1{
         /* font-size: 2rem; */
