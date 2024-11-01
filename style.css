@@ -4248,6 +4248,13 @@ background-size: cover; */
         background-size: cover;
         object-fit: cover;
     }
+    .section-step{
+        background-image: url('assets/Image/1084-361349-desktop-3-up-card-next-step-bg-1600x544.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
     .footer-group{
         /* display: flex; */
         /* width:33.3333% */
@@ -4418,6 +4425,13 @@ background-size: cover; */
     }
     .resource-component{
         background-image: url('assets/Image/1400\(2\)-361349desktop-interactive-demo-resources-by-role-bg-1600x768.avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    .section-step{
+        background-image: url('assets/Image/1400-361349-desktop-3-up-card-next-step-bg-1600x544.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
