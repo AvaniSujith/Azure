@@ -5155,3 +5155,26 @@ background-size: cover; */
     }
     
 }
+
+
+@media screen and (min-width:2560px) {
+    .info-container-main{
+        margin: auto;
+    }
+
+    .ai-chat{
+        max-width: 1328px;
+        margin: auto;
+    }
+
+    .desk-sticky-nav, .card-title, .card-division, .product-component, .card-btn, .product-main-content{
+        max-width: 1328px;
+        margin: auto;
+    }
+
+    .icons{
+        margin: auto;
+        display: flex;
+        /* justify-content: center; */
+    }
+}
