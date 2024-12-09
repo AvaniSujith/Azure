@@ -975,6 +975,7 @@ a{
     border-radius: 1rem;
     height: auto;
     max-height: 100%;
+    
 
  }
  .play-icon{
@@ -2675,6 +2676,13 @@ footer{
         width:700px;
     }
 
+    .image-container img{
+        max-width: 100%;
+        max-height: 100%;
+        width: calc(100% - 4px);
+        height: calc(100% - 3.3px);
+    }
+
 
 }
 @media screen and (min-width:860px){   
@@ -3492,8 +3500,28 @@ background-size: cover; */
         padding-right: 3.5rem;
      }
 
+     .image-container img{
+        max-width: calc(100% - 304px);
+        max-height: calc(100% - 284.487px);
+        height: 100%;
+        width: 100%;
+        margin-left: 300px
+     }
 
-
+     .inside-btn{
+        left: 70%;
+        top: 38%;
+    }
+     
+     /* .image-container{
+        max-width: calc(100% - 304px);
+        max-height: calc(100% - 271.975px);
+        height: 100%;
+        width: 100%;
+     } */
+     .tab-panel{
+        scrollbar-width: none;
+     }
     .card-division{
         display: flex;
         justify-content: space-between;
@@ -3695,10 +3723,15 @@ background-size: cover; */
     } */
     .ai-img-container{
         position: absolute;
-        width: 444px;
+        /* width: 444px; */
+        width: 100%;
         height: auto;
-        max-width: 656px;
-        max-height: 528px;
+        /* width: calc(100% - 4px);
+        height: calc(100% - 3.3px); */
+        max-width: 100%;
+        max-height: 100%;
+        /* max-width: 656px;
+        max-height: 528px; */
         aspect-ratio: 4 / 3;
         top: 0;
         float: right;
@@ -3714,7 +3747,7 @@ background-size: cover; */
           display: flex;
           flex-direction: row;
           position: relative;
-          overflow-x: hidden;
+          /* overflow-x: hidden; */
           margin-top: 2rem;
       }
       .tab-panel-component{
@@ -4317,6 +4350,17 @@ background-size: cover; */
     .brands {
         max-width: 1000px;
     }
+
+    .image-container img{
+        max-width: calc(100% - 369.6px);
+        max-height: calc(100% - 93.513px);
+        height: 100%;
+        width: 100%;
+        margin-left: 368px
+     }
+     .inside-btn{
+        top: 45%;
+     }
 }
 
 @media screen and (min-width:1043px){
@@ -5033,10 +5077,10 @@ background-size: cover; */
     }
 
 
-    .ai-img-container{
+    /* .ai-img-container{
         height: 614.375px;
         width: 772.8px;
-    }
+    } */
     .ai-chat{
         padding-left: 4rem;
         padding-right: 4rem;
@@ -5153,7 +5197,21 @@ background-size: cover; */
         padding-right: 5%;
         padding-left: 5%;
     }
-    
+    .image-container img{
+        max-width: calc(100% - 523.2px);
+        max-height: calc(100% - 142px);
+        height: 100%;
+        width: 100%;
+        margin-left: 533px
+     }
+
+     .inside-btn{
+        top: 60%;
+        left: 72%;
+     }
+    .footer-end{
+        flex-direction: row;
+    }
 }
 
 
